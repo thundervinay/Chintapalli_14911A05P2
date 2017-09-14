@@ -70,17 +70,17 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void remove(int index) {
-		// Add your implementation here
+		this.students[index]=null;
 	}
 
 	@Override
 	public void remove(Student student) {
-		// Add your implementation here
+		
 	}
 
 	@Override
 	public void removeFromIndex(int index) {
-		// Add your implementation here
+		this.students[index]=null;
 	}
 
 	@Override
@@ -90,7 +90,7 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void removeToIndex(int index) {
-		// Add your implementation here
+		this.students[index]=null;
 	}
 
 	@Override
@@ -141,7 +141,6 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public Student getNextStudent(Student student) {
-		// Add your implementation here
 		return null;
 	}
 }
