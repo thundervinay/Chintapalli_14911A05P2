@@ -54,7 +54,9 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void addLast(Student student) {
-		// Add your implementation here
+		int i=this.students.length;
+		this.students[i]=student;
+		this.students[i+1]=null;
 	}
 
 	@Override
