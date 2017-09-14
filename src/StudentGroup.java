@@ -61,7 +61,11 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void add(Student student, int index) {
-		// Add your implementation here
+		int i=this.students.length;
+		for(int j=i;j>index;j--)
+			this.students[j]=this.students[j-1];
+		this.students[index]=student;
+		this.students[i+1]=null;
 	}
 
 	@Override
