@@ -49,7 +49,7 @@ public class StudentGroup implements StudentArrayOperation {
 		for(int i=a;i>0;i--)
 			this.students[i]=this.students[i-1];
 		this.students[0]=student;
-		
+		this.students[i+1]=null;
 	}
 
 	@Override
